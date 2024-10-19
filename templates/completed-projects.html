@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Completed-Projects</title>
+
+    <link rel="stylesheet" href="{% static 'css/completed-projects.css' %}">
+
+</head>
+<body>
+    <div class="heading">
+        <h1><b>PROJECTS</b></h1>
+        <p></p>
+    </div>
+
+        <div class="contents">
+
+            {% for item in datas %}
+
+            <img src="uploads/Portfolio.png" alt="Projects-image">
+
+            <h2>Portfolio</h2>
+
+            {% endfor %}
+
+        </div>
+
+</body>
+</html>
